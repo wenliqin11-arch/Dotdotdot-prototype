@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis Accessibility Agent - Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-screen" id="player1-screen">
+            <h2>Player 1: Alex</h2>
+            
+            <div class="game-ui">
+                <p>Puzzle Timer:</p>
+                <div class="timer-bar-container">
+                    <div class="timer-bar" id="timer-bar"></div>
+                </div>
+            </div>
+
+            <div class="game-area">
+                <p>Status: <span id="puzzle-status">Playing...</span></p>
+                <button id="action-btn">Try to Solve Puzzle</button>
+            </div>
+            
+            <div class="ai-panel hidden" id="ai-negotiation-panel">
+                <div class="ai-message">
+                    <strong>Aegis AI:</strong> I noticed you're struggling with the timer. Would you like me to slow down the puzzle timer by 20%?
+                </div>
+                <div class="ai-actions">
+                    <button id="accept-btn">Accept</button>
+                    <button id="reject-btn">Reject</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="player-screen" id="player2-screen">
+            <h2>Player 2: Sam</h2>
+            <div class="game-area">
+                <p>Status: Playing alongside Alex...</p>
+            </div>
+            <div class="transparency-feed">
+                <h3>Team System Feed</h3>
+                <ul id="team-feed-list">
+                    <li>Match started.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
