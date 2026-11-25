@@ -1,4 +1,4 @@
-# Aegis Accessibility Agent Prototype
+# Dotdotdot Accessibility Agent Prototype
 
 **Word count of this README:** 200
 
